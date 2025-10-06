@@ -1,1 +1,0 @@
-De moment aquí només hi ha lo que ha pujat el Ramon.
