@@ -21,10 +21,10 @@ LANGUAGES = [
     Language("es", "Spanish", "Romance", "Indo-European"),
     Language("gl", "Galician", "Romance", "Indo-European"),
     Language("pt", "Portuguese", "Romance", "Indo-European"),
+    Language("cs", "Czech", "Slavic", "Indo-European"),
     Language("pl", "Polish", "Slavic", "Indo-European"),
     Language("ru", "Russian", "Slavic", "Indo-European"),
     Language("hi", "Hindi", "Indo-Aryan", "Indo-European"),
-    Language("cs", "Czech", "Slavic", "Indo-European"),
 
     # Other families
     Language("ar", "Arabic", "Semitic", "Afro-Asiatic"),
