@@ -13,14 +13,14 @@ class Language:
 LANGUAGES = [
     # Indo-European
     Language("en", "English", "Germanic", "Indo-European"),
-    Language("sv", "Swedish", "Germanic", "Indo-European"),
     Language("de", "German", "Germanic", "Indo-European"),
+    Language("sv", "Swedish", "Germanic", "Indo-European"),
     Language("is", "Icelandic", "Germanic", "Indo-European"),
     Language("it", "Italian", "Romance", "Indo-European"),
-    Language("gl", "Galician", "Romance", "Indo-European"),
     Language("fr", "French", "Romance", "Indo-European"),
-    Language("pt", "Portuguese", "Romance", "Indo-European"),
     Language("es", "Spanish", "Romance", "Indo-European"),
+    Language("gl", "Galician", "Romance", "Indo-European"),
+    Language("pt", "Portuguese", "Romance", "Indo-European"),
     Language("pl", "Polish", "Slavic", "Indo-European"),
     Language("ru", "Russian", "Slavic", "Indo-European"),
     Language("hi", "Hindi", "Indo-Aryan", "Indo-European"),
