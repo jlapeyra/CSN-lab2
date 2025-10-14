@@ -1,55 +1,73 @@
                      File      Geometric        Poisson    AltmannZeta      TruncZeta
 -------------------------------------------------------------------------------------
-Arabic_degree_sequence.txt        28707.5        35322.7        28623.4        28817.3
-Finnish_degree_sequence.txt        21855.6        28034.4        21409.1        21291.2
-Russian_degree_sequence.txt        26775.9        33465.7          26581          26679
-Turkish_degree_sequence.txt        23339.4        28703.9        23309.8          23653
-Polish_degree_sequence.txt        25427.9        31679.8        25248.3        25667.6
-Galician_degree_sequence.txt        32541.4        41002.9        32129.6          31980
- Thai_degree_sequence.txt          30895        37484.4        30904.6        31392.8
-Chinese_degree_sequence.txt        29635.1        37725.2        29075.4        29274.7
-Japanese_degree_sequence.txt        39865.1        50945.4        38974.9        39071.3
-Hindi_degree_sequence.txt        32985.5        42003.7        32390.2        32677.7
-Italian_degree_sequence.txt        32850.8        41817.2        32185.6        32082.8
-Swedish_degree_sequence.txt        26388.6        33814.8        25779.4          25389
-Indonesian_degree_sequence.txt        26902.2        33693.3        26677.3        26749.9
-English_degree_sequence.txt          29309        37800.9        28472.1        28433.6
-Korean_degree_sequence.txt        22927.5          27476        23020.3        24032.8
+Arabic_degree_sequence.txt        28708.1        35326.4        28623.1        29127.1
+Finnish_degree_sequence.txt        21854.7        28629.3        21388.2        21199.1
+Icelandic_degree_sequence.txt        26049.9        32942.2        25688.2        25673.5
+Russian_degree_sequence.txt        26776.2        33393.7        26577.6        26745.7
+Spanish_degree_sequence.txt        32228.9        40411.3        31856.1        31456.2
+Turkish_degree_sequence.txt        23338.7        29085.9          23312        23642.3
+Polish_degree_sequence.txt        25426.4        31791.7        25249.5        25495.9
+Galician_degree_sequence.txt        32539.5        41060.3        32106.7        31688.2
+ Thai_degree_sequence.txt        30894.9        37496.5        30891.7        31522.9
+French_degree_sequence.txt        34230.5        43603.4        33563.9        33605.8
+Chinese_degree_sequence.txt        29635.1        37779.3        29075.3        29028.7
+German_degree_sequence.txt          29520        38341.8        28652.8        28367.9
+Portuguese_degree_sequence.txt        32398.2        40856.6        31920.7        31672.5
+Japanese_degree_sequence.txt        39865.1        50901.1        38974.1        38855.6
+Czech_degree_sequence.txt        25738.5        32495.2        25396.3          25179
+Hindi_degree_sequence.txt        32985.4        42031.9        32401.3        32415.7
+Italian_degree_sequence.txt        32849.8        41800.2        32176.4        32122.9
+Swedish_degree_sequence.txt        26388.5        33818.4        25756.9        25630.3
+Indonesian_degree_sequence.txt        26900.5        33617.4        26673.6        26839.1
+English_degree_sequence.txt        29308.9        37906.2        28475.8        28352.5
+Korean_degree_sequence.txt        22927.2        27524.6        23024.1        23940.2
 
 Optimized Parameters:
                      File                     Geometric                       Poisson                   AltmannZeta                     TruncZeta
 -------------------------------------------------------------------------------------------------------------------------------------------------
-Arabic_degree_sequence.txt        0.52856              -        1.97417              -        9.20287        9.01671        1.73671        9.02076
-Finnish_degree_sequence.txt       0.535004              -        1.94026              -        3.41047        1.30946        1.79272         10.483
-Russian_degree_sequence.txt        0.52569              -        1.77285              -        6.98256        6.11269        1.95837        12.4044
-Turkish_degree_sequence.txt       0.527755              -        1.72798              -        9.73751        9.63345        1.87626        9.63267
-Polish_degree_sequence.txt       0.525724              -        1.87138              -        5.65739        4.35695        2.10106        17.2887
-Galician_degree_sequence.txt       0.517287              -         2.0034              -        5.54655        4.32446          1.969        14.5756
- Thai_degree_sequence.txt       0.517347              -         1.9574              -        8.83443        8.59247        1.89124        9.14542
-Chinese_degree_sequence.txt       0.527478              -        1.93761              -         4.3884        2.62442        2.11623        18.0479
-Japanese_degree_sequence.txt       0.514298              -        1.85027              -        3.91215         2.2287        2.26843        13.3988
-Hindi_degree_sequence.txt       0.522385              -        1.79268              -        4.47717        2.81637         2.1171        18.2262
-Italian_degree_sequence.txt       0.517403              -         2.0109              -        3.26606        1.24771        1.83136        9.16341
-Swedish_degree_sequence.txt       0.523385              -        1.92558              -        4.32225        2.56335        2.11383        10.8833
-Indonesian_degree_sequence.txt       0.528789              -        1.78277              -        6.53675        5.46404        2.04507        10.0022
-English_degree_sequence.txt       0.521368              -        1.88172              -        3.18716        1.13026        2.00289        18.7492
-Korean_degree_sequence.txt       0.528581              -        1.80639              -        9.68646        9.94444        1.81286        11.5916
+Arabic_degree_sequence.txt       0.518321              -        1.97907              -        8.34772        7.97718        1.69021        11.6504
+Finnish_degree_sequence.txt       0.526707              -         2.2735              -        3.71881        1.75401        1.94552        11.1717
+Icelandic_degree_sequence.txt       0.526725              -        1.84998              -        4.85557        3.41874        1.84872          9.616
+Russian_degree_sequence.txt       0.525488              -        1.83499              -          6.404        5.25104        2.19338        10.4918
+Spanish_degree_sequence.txt       0.517346              -        1.90499              -        4.86712        3.32819        1.73927        9.87569
+Turkish_degree_sequence.txt       0.528785              -        1.57751              -        9.55531        9.59584        1.93589        10.9175
+Polish_degree_sequence.txt       0.526723              -        2.04869              -        6.71616        5.73182        2.09319        13.7323
+Galician_degree_sequence.txt       0.518317              -        1.79227              -        4.33772        2.78626        2.00358         11.431
+ Thai_degree_sequence.txt       0.521347              -        1.98188              -        9.96517        10.3016        1.63811        9.67482
+French_degree_sequence.txt       0.521358              -        2.05637              -         3.6646        1.90324        1.59655        10.6561
+Chinese_degree_sequence.txt       0.528558              -        2.01129              -         4.3105        2.51148        1.95087        13.3697
+German_degree_sequence.txt       0.521358              -        2.14713              -        3.26538        1.26656        2.11918        14.0942
+Portuguese_degree_sequence.txt       0.522358              -        1.89472              -        3.66048        1.78491        2.06664        12.9849
+Japanese_degree_sequence.txt        0.52036              -        1.89421              -        4.16039        2.26937        2.01485        16.8809
+Czech_degree_sequence.txt       0.528534              -        1.94934              -        5.19721        3.60911        1.96201        10.0575
+Hindi_degree_sequence.txt       0.517369              -        2.06143              -        5.02125        3.48292        2.09427        13.9619
+Italian_degree_sequence.txt       0.521343              -        1.83403              -        3.58075          1.631        2.26789        13.4723
+Swedish_degree_sequence.txt        0.52581              -        1.92934              -        3.42404        1.47659        2.05148        9.44382
+Indonesian_degree_sequence.txt       0.528514              -        1.95302              -        5.30994        3.95919        2.17027        11.2977
+English_degree_sequence.txt       0.528561              -        2.05168              -        3.58392        1.53231        2.17815        16.8914
+Korean_degree_sequence.txt       0.528833              -        1.75874              -        9.69331        10.1039        1.95281        9.09726
 
 Model Selection (based on AIC):
                      File          Best Model                    Parameters            AIC
 ------------------------------------------------------------------------------------------
-Arabic_degree_sequence.txt         AltmannZeta              9.20287, 9.01671        57250.9
-Finnish_degree_sequence.txt           TruncZeta               1.79272, 10.483        42586.5
-Russian_degree_sequence.txt         AltmannZeta              6.98256, 6.11269        53165.9
-Turkish_degree_sequence.txt         AltmannZeta              9.73751, 9.63345        46623.6
-Polish_degree_sequence.txt         AltmannZeta              5.65739, 4.35695        50500.7
-Galician_degree_sequence.txt           TruncZeta                1.969, 14.5756        63964.1
- Thai_degree_sequence.txt           Geometric                      0.517347        61792.1
-Chinese_degree_sequence.txt         AltmannZeta               4.3884, 2.62442        58154.8
-Japanese_degree_sequence.txt         AltmannZeta               3.91215, 2.2287        77953.7
-Hindi_degree_sequence.txt         AltmannZeta              4.47717, 2.81637        64784.3
-Italian_degree_sequence.txt           TruncZeta              1.83136, 9.16341        64169.7
-Swedish_degree_sequence.txt           TruncZeta              2.11383, 10.8833          50782
-Indonesian_degree_sequence.txt         AltmannZeta              6.53675, 5.46404        53358.6
-English_degree_sequence.txt           TruncZeta              2.00289, 18.7492        56871.3
-Korean_degree_sequence.txt           Geometric                      0.528581        45857.1
+Arabic_degree_sequence.txt         AltmannZeta              8.34772, 7.97718        57250.3
+Finnish_degree_sequence.txt           TruncZeta              1.94552, 11.1717        42402.2
+Icelandic_degree_sequence.txt           TruncZeta                1.84872, 9.616          51351
+Russian_degree_sequence.txt         AltmannZeta                6.404, 5.25104        53159.3
+Spanish_degree_sequence.txt           TruncZeta              1.73927, 9.87569        62916.3
+Turkish_degree_sequence.txt         AltmannZeta              9.55531, 9.59584        46628.1
+Polish_degree_sequence.txt         AltmannZeta              6.71616, 5.73182        50502.9
+Galician_degree_sequence.txt           TruncZeta               2.00358, 11.431        63380.4
+ Thai_degree_sequence.txt         AltmannZeta              9.96517, 10.3016        61787.4
+French_degree_sequence.txt         AltmannZeta               3.6646, 1.90324        67131.9
+Chinese_degree_sequence.txt           TruncZeta              1.95087, 13.3697        58061.3
+German_degree_sequence.txt           TruncZeta              2.11918, 14.0942        56739.9
+Portuguese_degree_sequence.txt           TruncZeta              2.06664, 12.9849        63348.9
+Japanese_degree_sequence.txt           TruncZeta              2.01485, 16.8809        77715.3
+Czech_degree_sequence.txt           TruncZeta              1.96201, 10.0575        50361.9
+Hindi_degree_sequence.txt         AltmannZeta              5.02125, 3.48292        64806.6
+Italian_degree_sequence.txt           TruncZeta              2.26789, 13.4723        64249.9
+Swedish_degree_sequence.txt           TruncZeta              2.05148, 9.44382        51264.5
+Indonesian_degree_sequence.txt         AltmannZeta              5.30994, 3.95919        53351.3
+English_degree_sequence.txt           TruncZeta              2.17815, 16.8914          56709
+Korean_degree_sequence.txt           Geometric                      0.528833        45856.3
