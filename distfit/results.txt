@@ -1,0 +1,26 @@
+                     File      Geometric        Poisson    AltmannZeta      TruncZeta
+-------------------------------------------------------------------------------------
+sample_of_zeta_with_parameter_2.5.txt        1264.49        1826.28        1059.49        1059.53
+sample_of_geometric_with_parameter_0.1.txt        3281.74        5759.88        3284.16        3486.39
+sample_of_zeta_with_parameter_3.txt        783.912        1354.23        683.444        680.495
+sample_of_zeta_with_parameter_2.txt        2398.77        3672.44        1678.53         1671.3
+sample_of_zeta_with_parameter_3.5.txt        648.354        1323.84        523.577        522.256
+sample_of_geometric_with_parameter_0.05.txt        3930.65        8917.46        3925.02        4224.88
+sample_of_zeta_with_parameter_1.5.txt        5303.62        10051.6        3134.87        4138.35
+sample_of_geometric_with_parameter_0.8.txt        650.851        1184.43        652.148         667.37
+sample_of_geometric_with_parameter_0.2.txt        2506.02        3212.31        2512.24        2670.73
+sample_of_geometric_with_parameter_0.4.txt        1674.83        1902.41        1680.59        1768.94
+
+Optimized Parameters:
+                     File                     Geometric                       Poisson                   AltmannZeta                     TruncZeta
+-------------------------------------------------------------------------------------------------------------------------------------------------
+sample_of_zeta_with_parameter_2.5.txt       0.545137              -        1.79293              -        2.48247      0.0105474        2.48309        82.6278
+sample_of_geometric_with_parameter_0.1.txt      0.0969026              -        9.91812              -        9.95294        78.5813        1.08829        64.9376
+sample_of_zeta_with_parameter_3.txt       0.754276              -        1.45296              -        3.72033       0.533415        2.95912        51.8462
+sample_of_zeta_with_parameter_2.txt       0.285859              -        2.45387              -        2.30802        0.41157          1.964        405.222
+sample_of_zeta_with_parameter_3.5.txt       0.826904              -        1.54933              -        3.50286       0.114416        3.35294        430.717
+sample_of_geometric_with_parameter_0.05.txt      0.0518733              -         17.678              -        6.83672        99.9745        1.01933        160.415
+sample_of_zeta_with_parameter_1.5.txt      0.0485285              -        4.47716              -        1.41986      0.0255534        1.54487        999.446
+sample_of_geometric_with_parameter_0.8.txt       0.789855              -        1.35268              -          9.844        4.41494        2.79031         6.6371
+sample_of_geometric_with_parameter_0.2.txt       0.199261              -         5.3625              -        9.90224        35.8181        1.12762          36.12
+sample_of_geometric_with_parameter_0.4.txt       0.401556              -        2.44101              -        9.58986        14.7098        1.76992        14.0341
