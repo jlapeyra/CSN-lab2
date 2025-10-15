@@ -1,0 +1,9 @@
+Language (Best Model),Parameters,AIC
+Arabic (AltmannZeta),8.34772-7.97718,57250.3
+Chinese (TruncZeta),1.95087-13.3697,58061.3
+Finnish (TruncZeta),1.94552-11.1717,42402.2
+Indonesian (AltmannZeta),5.30994-3.95919,53351.3
+Japanese (TruncZeta),2.01485-16.8809,77715.3
+Korean (Geometric),0.528833,45856.3
+Thai (AltmannZeta),9.96517-10.3016,61787.4
+Turkish (AltmannZeta),9.55531-9.59584,46628.1

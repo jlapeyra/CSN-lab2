@@ -1,0 +1,22 @@
+ Language      Geometric        Poisson    AltmannZeta      TruncZeta
+    Arabic    6.20003e-37              0              1   6.40027e-125
+   Finnish    4.2358e-221              0    1.06788e-18              1
+ Icelandic   2.71217e-159              0              1   1.56567e-150
+   Russian    1.86616e-86              0              1    2.78545e-72
+   Spanish   2.02824e-300              0   1.08629e-139              1
+   Turkish    1.42708e-12              0              1   1.93197e-194
+    Polish    1.11365e-77              0              1    1.06375e-57
+  Galician              0              0   3.95213e-162              1
+      Thai       0.347316              0       0.652684   4.20865e-232
+    French              0              0   3.78977e-286              1
+   Chinese   2.25236e-239              0              1    2.44966e-69
+    German              0              0      4.211e-51              1
+Portuguese   2.53249e-278              0    3.85909e-73              1
+  Japanese              0              0    3.14304e-61              1
+     Czech   2.66272e-243              0    4.24228e-93              1
+     Hindi   8.92467e-279              0    6.70575e-22              1
+   Italian   1.08694e-322              0    5.60294e-35              1
+   Swedish   2.28589e-297              0     3.1026e-30              1
+Indonesian    4.81366e-97              0              1    1.84825e-59
+   English              0              0    0.000447701       0.999552
+    Korean              1              0    1.98463e-40              0

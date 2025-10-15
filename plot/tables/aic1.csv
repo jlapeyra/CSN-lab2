@@ -1,0 +1,14 @@
+Language (Best Model),Parameters,AIC
+English (TruncZeta),2.17815-16.8914,56709.0
+German (TruncZeta),2.11918-14.0942,56739.9
+Swedish (TruncZeta),2.05148-9.44382,51264.5
+Icelandic (TruncZeta),1.84872-9.616,51351.0
+Italian (TruncZeta),2.26789-13.4723,64249.9
+French (AltmannZeta),3.6646-1.90324,67131.9
+Spanish (TruncZeta),1.73927-9.87569,62916.3
+Galician (TruncZeta),2.00358-11.431,63380.4
+Portuguese (TruncZeta),2.06664-12.9849,63348.9
+Czech (TruncZeta),1.96201-10.0575,50361.9
+Polish (AltmannZeta),6.71616-5.73182,50502.9
+Russian (AltmannZeta),6.404-5.25104,53159.3
+Hindi (AltmannZeta),5.02125-3.48292,64806.6
