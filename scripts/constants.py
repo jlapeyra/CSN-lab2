@@ -51,5 +51,3 @@ class ConlluColumns:
     MISC = 9
     TOTAL = 10
 
-
-pass
