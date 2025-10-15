@@ -1,0 +1,179 @@
+=== Running optimizers on all datasets ===
+=== Computing AIC values ===
+=== Printing negative log-likelihoods ===
+                     File      Geometric        Poisson    AltmannZeta      TruncZeta
+-------------------------------------------------------------------------------------
+Arabic_degree_sequence.txt        28707.9        35466.3        28623.6        28909.5
+Finnish_degree_sequence.txt        21855.6        28020.2        21388.6        21347.2
+Icelandic_degree_sequence.txt        26050.3          32929        25684.2        26029.2
+Russian_degree_sequence.txt        26774.5        33384.6        26576.1        26740.8
+Spanish_degree_sequence.txt          32228        40433.3          31857          31537
+Turkish_degree_sequence.txt        23340.6        29135.5        23312.3        23758.3
+Polish_degree_sequence.txt        25426.1        31673.9        25247.9        25379.1
+Galician_degree_sequence.txt        32543.8        41264.2        32093.8        31722.2
+ Thai_degree_sequence.txt        30894.8        37519.2        30893.2        31425.5
+French_degree_sequence.txt        34231.5        43774.9        33593.2          32936
+Chinese_degree_sequence.txt        29634.8        37722.6        29084.3        29242.3
+German_degree_sequence.txt        29520.8        38140.3        28685.5        28569.5
+Portuguese_degree_sequence.txt        32398.8        40856.1        31925.3        31758.6
+Japanese_degree_sequence.txt        39862.4        50994.8        38950.2        38810.9
+Czech_degree_sequence.txt        25739.4        32483.1        25392.6        25179.9
+Hindi_degree_sequence.txt        32986.3          41944        32393.8        32345.1
+Italian_degree_sequence.txt        32849.6        41966.8        32186.1        32107.2
+Swedish_degree_sequence.txt        26387.9        33875.6        25771.8        25703.8
+Indonesian_degree_sequence.txt        26900.5        33611.1        26677.7        26812.9
+English_degree_sequence.txt        29308.5        37916.5        28479.4        28471.7
+Korean_degree_sequence.txt        22927.5        27512.6          23018        24100.6
+
+=== Printing fitted parameters ===
+
+Optimized Parameters:
+                     File                     Geometric                       Poisson                   AltmannZeta                     TruncZeta
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Arabic_degree_sequence.txt                      0.527489                       1.74167              8.89953, 8.64052              2.09125, 10.2969
+Finnish_degree_sequence.txt                      0.532929                       1.91334              4.30132, 2.40578              1.75307, 10.2959
+Icelandic_degree_sequence.txt                      0.525424                        1.9043              4.64204, 2.83119              2.30704, 10.6198
+Russian_degree_sequence.txt                       0.52855                       1.96012               6.0882, 4.85779              2.09186, 12.0854
+Spanish_degree_sequence.txt                      0.522368                       1.85072               4.15011, 2.4187              1.69294, 9.31915
+Turkish_degree_sequence.txt                      0.533978                       2.25366               9.38443, 9.1092              1.96729, 11.3594
+Polish_degree_sequence.txt                      0.528552                       1.89294              5.90568, 4.58596              1.95346, 12.4402
+Galician_degree_sequence.txt                      0.523469                       2.14784              4.44715, 2.77547              2.03465, 9.22769
+ Thai_degree_sequence.txt                      0.517326                       2.00117                9.7946, 10.088              1.79418, 10.2114
+French_degree_sequence.txt                      0.522629                       2.13718              4.65534, 3.15752               1.9447, 10.0823
+Chinese_degree_sequence.txt                      0.528521                       1.88863              4.11494, 2.43884              2.11793, 17.7762
+German_degree_sequence.txt                      0.523435                       2.04084              3.98109, 2.01551              2.05858, 19.6218
+Portuguese_degree_sequence.txt                      0.522381                       1.92146              3.72354, 1.78521              2.12157, 13.4274
+Japanese_degree_sequence.txt                      0.516277                       2.05008               3.7186, 1.81599              2.19587, 11.9171
+Czech_degree_sequence.txt                      0.527513                       1.90897              4.22938, 2.48781              1.91863, 10.3617
+Hindi_degree_sequence.txt                      0.526708                       1.84001              4.40447, 2.78289              1.84906, 11.6884
+Italian_degree_sequence.txt                       0.52238                       1.74608              3.91479, 2.12326              2.21551, 15.6934
+Swedish_degree_sequence.txt                      0.527517                       1.79689               3.25834, 1.1263              2.02914, 17.6465
+Indonesian_degree_sequence.txt                      0.528513                       1.89408              6.51936, 5.42658              2.07149, 13.4708
+English_degree_sequence.txt                      0.522377                       2.06303              3.41453, 1.31233              2.03837, 20.9045
+Korean_degree_sequence.txt                      0.528908                       2.00779              9.70609, 9.85937              1.90309, 8.01639
+
+=== Printing AIC table ===
+
+AIC Table (ΔAIC relative to best model per file):
+                     File      Geometric        Poisson    AltmannZeta      TruncZeta
+-------------------------------------------------------------------------------------
+Arabic_degree_sequence.txt        166.742        13683.5      *0.000000        571.934
+Finnish_degree_sequence.txt        1014.86          13344        82.7617      *0.000000
+Icelandic_degree_sequence.txt        730.227        14487.5      *0.000000        689.879
+Russian_degree_sequence.txt        394.797        13615.1      *0.000000        329.523
+Spanish_degree_sequence.txt        1380.14        17790.7        639.953      *0.000000
+Turkish_degree_sequence.txt        54.5508        11644.4      *0.000000        892.086
+Polish_degree_sequence.txt        354.383          12850      *0.000000        262.371
+Galician_degree_sequence.txt        1641.21        19082.1        743.289      *0.000000
+ Thai_degree_sequence.txt        1.26172        13250.1      *0.000000        1064.67
+French_degree_sequence.txt           2589        21675.7        1314.41      *0.000000
+Chinese_degree_sequence.txt        1099.01        17274.4      *0.000000        315.965
+German_degree_sequence.txt        1900.62        19139.6        231.988      *0.000000
+Portuguese_degree_sequence.txt        1278.38        18193.1        333.477      *0.000000
+Japanese_degree_sequence.txt        2100.95        24365.8        278.625      *0.000000
+Czech_degree_sequence.txt         1117.1        14604.5        425.391      *0.000000
+Hindi_degree_sequence.txt        1280.46        19195.8        97.5078      *0.000000
+Italian_degree_sequence.txt        1482.66        19717.2        157.734      *0.000000
+Swedish_degree_sequence.txt        1366.08        16341.6        135.891      *0.000000
+Indonesian_degree_sequence.txt        443.559        13864.8      *0.000000        270.477
+English_degree_sequence.txt        1671.65        18887.7        15.4219      *0.000000
+Korean_degree_sequence.txt      *0.000000        9170.03        182.836        2348.11
+
+=== Printing Akaike weights ===
+
+Akaike Weights (probability each model is best):
+                          File      Geometric        Poisson    AltmannZeta      TruncZeta
+------------------------------------------------------------------------------------------
+    Arabic_degree_sequence.txt    6.20003e-37              0              1   6.40027e-125
+   Finnish_degree_sequence.txt    4.2358e-221              0    1.06788e-18              1
+ Icelandic_degree_sequence.txt   2.71217e-159              0              1   1.56567e-150
+   Russian_degree_sequence.txt    1.86616e-86              0              1    2.78545e-72
+   Spanish_degree_sequence.txt   2.02824e-300              0   1.08629e-139              1
+   Turkish_degree_sequence.txt    1.42708e-12              0              1   1.93197e-194
+    Polish_degree_sequence.txt    1.11365e-77              0              1    1.06375e-57
+  Galician_degree_sequence.txt              0              0   3.95213e-162              1
+      Thai_degree_sequence.txt       0.347316              0       0.652684   4.20865e-232
+    French_degree_sequence.txt              0              0   3.78977e-286              1
+   Chinese_degree_sequence.txt   2.25236e-239              0              1    2.44966e-69
+    German_degree_sequence.txt              0              0      4.211e-51              1
+Portuguese_degree_sequence.txt   2.53249e-278              0    3.85909e-73              1
+  Japanese_degree_sequence.txt              0              0    3.14304e-61              1
+     Czech_degree_sequence.txt   2.66272e-243              0    4.24228e-93              1
+     Hindi_degree_sequence.txt   8.92467e-279              0    6.70575e-22              1
+   Italian_degree_sequence.txt   1.08694e-322              0    5.60294e-35              1
+   Swedish_degree_sequence.txt   2.28589e-297              0     3.1026e-30              1
+Indonesian_degree_sequence.txt    4.81366e-97              0              1    1.84825e-59
+   English_degree_sequence.txt              0              0    0.000447701       0.999552
+    Korean_degree_sequence.txt              1              0    1.98463e-40              0
+
+=== Printing best model summary ===
+
+Model Selection (Best Model per File):
+                     File          Best Model                    Parameters            AIC
+------------------------------------------------------------------------------------------
+Arabic_degree_sequence.txt         AltmannZeta              8.89953, 8.64052        57251.1
+Finnish_degree_sequence.txt           TruncZeta              1.75307, 10.2959        42698.4
+Icelandic_degree_sequence.txt         AltmannZeta              4.64204, 2.83119        51372.5
+Russian_degree_sequence.txt         AltmannZeta               6.0882, 4.85779        53156.1
+Spanish_degree_sequence.txt           TruncZeta              1.69294, 9.31915          63078
+Turkish_degree_sequence.txt         AltmannZeta               9.38443, 9.1092        46628.6
+Polish_degree_sequence.txt         AltmannZeta              5.90568, 4.58596        50499.9
+Galician_degree_sequence.txt           TruncZeta              2.03465, 9.22769        63448.3
+ Thai_degree_sequence.txt         AltmannZeta                9.7946, 10.088        61790.3
+French_degree_sequence.txt           TruncZeta               1.9447, 10.0823          65876
+Chinese_degree_sequence.txt         AltmannZeta              4.11494, 2.43884        58172.7
+German_degree_sequence.txt           TruncZeta              2.05858, 19.6218        57143.1
+Portuguese_degree_sequence.txt           TruncZeta              2.12157, 13.4274        63521.2
+Japanese_degree_sequence.txt           TruncZeta              2.19587, 11.9171        77625.8
+Czech_degree_sequence.txt           TruncZeta              1.91863, 10.3617        50363.7
+Hindi_degree_sequence.txt           TruncZeta              1.84906, 11.6884        64694.2
+Italian_degree_sequence.txt           TruncZeta              2.21551, 15.6934        64218.5
+Swedish_degree_sequence.txt           TruncZeta              2.02914, 17.6465        51411.6
+Indonesian_degree_sequence.txt         AltmannZeta              6.51936, 5.42658        53359.4
+English_degree_sequence.txt           TruncZeta              2.03837, 20.9045        56947.4
+Korean_degree_sequence.txt           Geometric                      0.528908        45857.1
+
+=== Writing fitted CDFs to output files ===
+ → Arabic_degree_sequence_AltmannZeta_fit.txt written.
+ → Finnish_degree_sequence_TruncZeta_fit.txt written.
+ → Icelandic_degree_sequence_AltmannZeta_fit.txt written.
+ → Russian_degree_sequence_AltmannZeta_fit.txt written.
+ → Spanish_degree_sequence_TruncZeta_fit.txt written.
+ → Turkish_degree_sequence_AltmannZeta_fit.txt written.
+ → Polish_degree_sequence_AltmannZeta_fit.txt written.
+ → Galician_degree_sequence_TruncZeta_fit.txt written.
+ → Thai_degree_sequence_AltmannZeta_fit.txt written.
+ → French_degree_sequence_TruncZeta_fit.txt written.
+ → Chinese_degree_sequence_AltmannZeta_fit.txt written.
+ → German_degree_sequence_TruncZeta_fit.txt written.
+ → Portuguese_degree_sequence_TruncZeta_fit.txt written.
+ → Japanese_degree_sequence_TruncZeta_fit.txt written.
+ → Czech_degree_sequence_TruncZeta_fit.txt written.
+ → Hindi_degree_sequence_TruncZeta_fit.txt written.
+ → Italian_degree_sequence_TruncZeta_fit.txt written.
+ → Swedish_degree_sequence_TruncZeta_fit.txt written.
+ → Indonesian_degree_sequence_AltmannZeta_fit.txt written.
+ → English_degree_sequence_TruncZeta_fit.txt written.
+ → Korean_degree_sequence_Geometric_fit.txt written.
+=== Generating CDFs plots===
+ → Generating plot: fitted_models/English_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/Icelandic_degree_sequence_AltmannZeta_fit.txt.png
+ → Generating plot: fitted_models/Chinese_degree_sequence_AltmannZeta_fit.txt.png
+ → Generating plot: fitted_models/Czech_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/Arabic_degree_sequence_AltmannZeta_fit.txt.png
+ → Generating plot: fitted_models/Korean_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Portuguese_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/French_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/German_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/Hindi_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/Italian_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/Galician_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/Polish_degree_sequence_AltmannZeta_fit.txt.png
+ → Generating plot: fitted_models/Spanish_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/Indonesian_degree_sequence_AltmannZeta_fit.txt.png
+ → Generating plot: fitted_models/Finnish_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/Turkish_degree_sequence_AltmannZeta_fit.txt.png
+ → Generating plot: fitted_models/Japanese_degree_sequence_TruncZeta_fit.txt.png
+ → Generating plot: fitted_models/Russian_degree_sequence_AltmannZeta_fit.txt.png
+ → Generating plot: fitted_models/Thai_degree_sequence_AltmannZeta_fit.txt.png
+ → Generating plot: fitted_models/Swedish_degree_sequence_TruncZeta_fit.txt.png
