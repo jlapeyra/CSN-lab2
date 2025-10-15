@@ -1,0 +1,179 @@
+=== Running optimizers on all datasets ===
+=== Computing AIC values ===
+=== Printing negative log-likelihoods ===
+                     File      Geometric        Poisson
+-------------------------------------------------------
+Arabic_degree_sequence.txt        28707.5        35301.7
+Finnish_degree_sequence.txt        21855.6        28077.7
+Icelandic_degree_sequence.txt        26049.2        33061.6
+Russian_degree_sequence.txt        26775.3        33924.2
+Spanish_degree_sequence.txt        32229.9        40465.2
+Turkish_degree_sequence.txt          23339        28571.3
+Polish_degree_sequence.txt        25426.8        31896.5
+Galician_degree_sequence.txt        32541.5          41359
+ Thai_degree_sequence.txt        30894.4        37480.2
+French_degree_sequence.txt        34225.7        43605.2
+Chinese_degree_sequence.txt        29635.6        37775.3
+German_degree_sequence.txt        29519.9        38065.7
+Portuguese_degree_sequence.txt        32396.5        40860.1
+Japanese_degree_sequence.txt          39865        50937.3
+Czech_degree_sequence.txt        25738.4        32628.8
+Hindi_degree_sequence.txt        32984.9        41894.4
+Italian_degree_sequence.txt        32847.3        41771.2
+Swedish_degree_sequence.txt        26387.3        34009.1
+Indonesian_degree_sequence.txt        26900.8        33654.1
+English_degree_sequence.txt        29308.6        37903.2
+Korean_degree_sequence.txt        22926.8        27454.9
+
+=== Printing fitted parameters ===
+
+Optimized Parameters:
+                     File                     Geometric                       Poisson
+-------------------------------------------------------------------------------------
+Arabic_degree_sequence.txt                      0.528561                       1.88587
+Finnish_degree_sequence.txt                      0.535004                       1.76678
+Icelandic_degree_sequence.txt                      0.528517                       1.74761
+Russian_degree_sequence.txt                      0.527504                       1.59706
+Spanish_degree_sequence.txt                      0.521398                       1.82463
+Turkish_degree_sequence.txt                      0.528561                       1.90468
+Polish_degree_sequence.txt                       0.52648                       2.10843
+Galician_degree_sequence.txt                      0.517295                       1.67767
+ Thai_degree_sequence.txt                      0.528521                       1.89789
+French_degree_sequence.txt                      0.518307                       2.06036
+Chinese_degree_sequence.txt                      0.525452                       2.00645
+German_degree_sequence.txt                      0.521343                       1.84115
+Portuguese_degree_sequence.txt                      0.518292                       1.94013
+Japanese_degree_sequence.txt                      0.518391                       2.00543
+Czech_degree_sequence.txt                      0.528524                       1.73824
+Hindi_degree_sequence.txt                      0.517331                       1.90854
+Italian_degree_sequence.txt                      0.518312                       1.86776
+Swedish_degree_sequence.txt                      0.526452                       2.09777
+Indonesian_degree_sequence.txt                      0.528532                       2.00145
+English_degree_sequence.txt                      0.525441                       2.05333
+Korean_degree_sequence.txt                      0.527745                       1.91973
+
+=== Printing AIC table ===
+
+AIC Table (ΔAIC relative to best model per file):
+                     File      Geometric        Poisson
+-------------------------------------------------------
+Arabic_degree_sequence.txt      *0.000000        13188.5
+Finnish_degree_sequence.txt      *0.000000        12444.3
+Icelandic_degree_sequence.txt      *0.000000        14024.8
+Russian_degree_sequence.txt      *0.000000        14297.9
+Spanish_degree_sequence.txt      *0.000000        16470.6
+Turkish_degree_sequence.txt      *0.000000        10464.6
+Polish_degree_sequence.txt      *0.000000        12939.3
+Galician_degree_sequence.txt      *0.000000          17635
+ Thai_degree_sequence.txt      *0.000000        13171.6
+French_degree_sequence.txt      *0.000000        18758.9
+Chinese_degree_sequence.txt      *0.000000        16279.3
+German_degree_sequence.txt      *0.000000        17091.5
+Portuguese_degree_sequence.txt      *0.000000        16927.2
+Japanese_degree_sequence.txt      *0.000000        22144.7
+Czech_degree_sequence.txt      *0.000000        13780.8
+Hindi_degree_sequence.txt      *0.000000          17819
+Italian_degree_sequence.txt      *0.000000        17847.7
+Swedish_degree_sequence.txt      *0.000000        15243.5
+Indonesian_degree_sequence.txt      *0.000000        13506.6
+English_degree_sequence.txt      *0.000000        17189.4
+Korean_degree_sequence.txt      *0.000000        9056.32
+
+=== Printing Akaike weights ===
+
+Akaike Weights (probability each model is best):
+                          File      Geometric        Poisson
+------------------------------------------------------------
+    Arabic_degree_sequence.txt              1              0
+   Finnish_degree_sequence.txt              1              0
+ Icelandic_degree_sequence.txt              1              0
+   Russian_degree_sequence.txt              1              0
+   Spanish_degree_sequence.txt              1              0
+   Turkish_degree_sequence.txt              1              0
+    Polish_degree_sequence.txt              1              0
+  Galician_degree_sequence.txt              1              0
+      Thai_degree_sequence.txt              1              0
+    French_degree_sequence.txt              1              0
+   Chinese_degree_sequence.txt              1              0
+    German_degree_sequence.txt              1              0
+Portuguese_degree_sequence.txt              1              0
+  Japanese_degree_sequence.txt              1              0
+     Czech_degree_sequence.txt              1              0
+     Hindi_degree_sequence.txt              1              0
+   Italian_degree_sequence.txt              1              0
+   Swedish_degree_sequence.txt              1              0
+Indonesian_degree_sequence.txt              1              0
+   English_degree_sequence.txt              1              0
+    Korean_degree_sequence.txt              1              0
+
+=== Printing best model summary ===
+
+Model Selection (Best Model per File):
+                     File          Best Model                    Parameters            AIC
+------------------------------------------------------------------------------------------
+Arabic_degree_sequence.txt           Geometric                      0.528561          57417
+Finnish_degree_sequence.txt           Geometric                      0.535004        43713.2
+Icelandic_degree_sequence.txt           Geometric                      0.528517        52100.5
+Russian_degree_sequence.txt           Geometric                      0.527504        53552.5
+Spanish_degree_sequence.txt           Geometric                      0.521398        64461.8
+Turkish_degree_sequence.txt           Geometric                      0.528561        46680.1
+Polish_degree_sequence.txt           Geometric                       0.52648        50855.7
+Galician_degree_sequence.txt           Geometric                      0.517295        65085.1
+ Thai_degree_sequence.txt           Geometric                      0.528521        61790.9
+French_degree_sequence.txt           Geometric                      0.518307        68453.4
+Chinese_degree_sequence.txt           Geometric                      0.525452        59273.3
+German_degree_sequence.txt           Geometric                      0.521343        59041.8
+Portuguese_degree_sequence.txt           Geometric                      0.518292        64795.1
+Japanese_degree_sequence.txt           Geometric                      0.518391        79731.9
+Czech_degree_sequence.txt           Geometric                      0.528524        51478.8
+Hindi_degree_sequence.txt           Geometric                      0.517331        65971.8
+Italian_degree_sequence.txt           Geometric                      0.518312        65696.7
+Swedish_degree_sequence.txt           Geometric                      0.526452        52776.7
+Indonesian_degree_sequence.txt           Geometric                      0.528532        53803.5
+English_degree_sequence.txt           Geometric                      0.525441        58619.1
+Korean_degree_sequence.txt           Geometric                      0.527745        45855.5
+
+=== Writing fitted CDFs to output files ===
+ → Arabic_degree_sequence_Geometric_fit.txt written.
+ → Finnish_degree_sequence_Geometric_fit.txt written.
+ → Icelandic_degree_sequence_Geometric_fit.txt written.
+ → Russian_degree_sequence_Geometric_fit.txt written.
+ → Spanish_degree_sequence_Geometric_fit.txt written.
+ → Turkish_degree_sequence_Geometric_fit.txt written.
+ → Polish_degree_sequence_Geometric_fit.txt written.
+ → Galician_degree_sequence_Geometric_fit.txt written.
+ → Thai_degree_sequence_Geometric_fit.txt written.
+ → French_degree_sequence_Geometric_fit.txt written.
+ → Chinese_degree_sequence_Geometric_fit.txt written.
+ → German_degree_sequence_Geometric_fit.txt written.
+ → Portuguese_degree_sequence_Geometric_fit.txt written.
+ → Japanese_degree_sequence_Geometric_fit.txt written.
+ → Czech_degree_sequence_Geometric_fit.txt written.
+ → Hindi_degree_sequence_Geometric_fit.txt written.
+ → Italian_degree_sequence_Geometric_fit.txt written.
+ → Swedish_degree_sequence_Geometric_fit.txt written.
+ → Indonesian_degree_sequence_Geometric_fit.txt written.
+ → English_degree_sequence_Geometric_fit.txt written.
+ → Korean_degree_sequence_Geometric_fit.txt written.
+=== Generating CDFs plots===
+ → Generating plot: fitted_models/Arabic_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Spanish_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Galician_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Russian_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Thai_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Japanese_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Swedish_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Portuguese_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Finnish_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Italian_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/German_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Chinese_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Turkish_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Korean_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Icelandic_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/English_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Hindi_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Czech_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Indonesian_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/Polish_degree_sequence_Geometric_fit.txt.png
+ → Generating plot: fitted_models/French_degree_sequence_Geometric_fit.txt.png
