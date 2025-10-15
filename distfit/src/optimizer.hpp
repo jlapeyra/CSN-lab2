@@ -124,6 +124,55 @@ template <typename Function> struct RandomOptimizer {
 };
 
 // ---------------------------------------------------------------
+// 🧬 Random Stall Optimizer with Early Stopping
+// ---------------------------------------------------------------
+
+template <typename Function>
+struct RandomStallOptimizer {
+  std::string name = "RandomStall";
+
+  struct Result : public OptimizerResult {
+    bool earlyStopped = false;
+  };
+
+  Result operator()(const OptimizerArguments& args, const Function& f) const {
+    const auto& cfg = f.config;
+
+    Result r;
+    r.cost = std::numeric_limits<float>::infinity();
+
+    float epsilon    = 1e-3;
+    int   stallLimit = std::min(100, args.maxIterations / 10);
+
+    int stallCounter = 0;
+
+    for (int i = 0; i < args.maxIterations; ++i) {
+      auto  candidate = cfg.randomVector();
+      float score     = f(candidate);
+
+      if (score < (r.cost - epsilon))
+        stallCounter = 0;
+      else
+        stallCounter++;
+
+      if (score < r.cost) {
+        r.cost = score;
+        r.args = candidate;
+      }
+
+      if (stallCounter >= stallLimit) {
+        r.earlyStopped = true;
+        r.iterations   = i + 1;
+        return r;
+      }
+    }
+
+    r.iterations = args.maxIterations;
+    return r;
+  }
+};
+
+// ---------------------------------------------------------------
 // 🔥 Simulated Annealing
 // ---------------------------------------------------------------
 
