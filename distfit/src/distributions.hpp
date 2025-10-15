@@ -46,14 +46,14 @@ inline float pdf_altmann_zeta(float k, float s, float q, float norm) {
   return std::pow(k + q, -s) / norm;
 }
 
-inline float cdf_altmann_zeta(float k, float s, float q, int max_terms = 100) {
-  if (k < 0.0f) return 0.0f;
-  float norm = hurwitz_zeta(s, q, max_terms);
+inline float cdf_altmann_zeta(int k, double s, double q, int max_terms = 1000) {
+  if (k < 1) return 0.0;
 
-  int   k_int = static_cast<int>(std::floor(k));
-  float sum   = 0.0f;
-  for (int n = 0; n <= k_int; ++n)
-    sum += std::pow(n + q, -s);
+  double norm = hurwitz_zeta(s, q, max_terms);
+
+  double sum = 0.0;
+  for (int n = 1; n <= k; ++n) sum += std::pow(n + q - 1, -s);
+
   return sum / norm;
 }
 
@@ -91,20 +91,25 @@ inline auto makePDF(const std::string& name, VectorFieldConfiguration cfg, PDF&&
   return FunctionDefinition<decltype(fn)>{cfg, fn, name, 0.0f};
 }
 
-inline auto makePDF_AltmannZeta(const std::string& name, VectorFieldConfiguration cfg, const std::vector<float>& data) {
+inline auto makePDF_AltmannZeta(const std::string&        name,
+                                VectorFieldConfiguration  cfg,
+                                const std::vector<float>& data) {
   auto fn = [data](const std::vector<float>& theta) {
-    float s = theta[0], q = theta[1];
-    if (s <= 1.0f || q < 0.0f) return INFINITY;
-    float norm = hurwitz_zeta(s, 1.0f + q, 100);
-    float logL = 0.0f;
+    double s = theta[0], q = theta[1];
+    if (s <= 1.0 || q < 0.0) return INFINITY;
+
+    int    max_terms = 1000;
+    double norm      = hurwitz_zeta(s, 1.0f + q, max_terms);
+
+    double logL = 0.0;
     for (float x : data) {
-      float p = pdf_altmann_zeta(x, s, q, norm);
-      if (p <= 1e-20f) p = 1e-20f;
+      double p = std::pow(x + q, -s) / norm;
+      if (p <= 1e-300) p = 1e-300;
       logL += std::log(p);
     }
-    return -logL;
+    return (float)-logL;
   };
-  return FunctionDefinition<decltype(fn)>{cfg, fn, name, 0.0f};
+  return FunctionDefinition<decltype(fn)>{cfg, fn, name, 0.0};
 }
 
 inline auto makePDF_TruncatedZeta(const std::string& name, VectorFieldConfiguration cfg, const std::vector<float>& data) {

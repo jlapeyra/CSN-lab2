@@ -8,9 +8,10 @@
 
 namespace fs = std::filesystem;
 
-int  ITERATIONS = 5000;
-bool FAST       = false;
-bool COMPARE    = false;
+int  ITERATIONS      = 5000;
+bool FAST            = false;
+bool COMPARE         = false;
+bool USE_ALTERNATIVE = false;
 
 std::vector<float> read_distribution(const std::string& str) {
   std::ifstream      ifs(str);
@@ -122,7 +123,7 @@ int run_single(const std::string& path) {
 struct ModelFitter {
   fs::path                                  dirPath;
   std::vector<fs::path>                     files;
-  std::vector<std::string>                  models = {"Geometric", "Poisson", "AltmannZeta", "TruncZeta"};
+  std::vector<std::string>                  models = {"Geometric", "Poisson"}; //, "AltmannZeta", "TruncZeta"};
   std::vector<std::vector<OptimizerResult>> results;
   std::vector<std::vector<double>>          resultsAIC;
 
@@ -136,6 +137,11 @@ struct ModelFitter {
       if (fs::is_regular_file(p)) files.push_back(p.path());
 
     results.resize(files.size());
+
+    if (USE_ALTERNATIVE) {
+      models.push_back("AltmannZeta");
+      models.push_back("TruncZeta");
+    }
   }
   void runOptimizers() {
     std::atomic<int> remaining = static_cast<int>(files.size());
@@ -153,8 +159,10 @@ struct ModelFitter {
 
       results[i].push_back(run_optimizer("Geometric", degrees, pdfGeometric(degrees)));
       results[i].push_back(run_optimizer("Poisson", degrees, pdfPoisson(degrees)));
-      results[i].push_back(run_optimizer("AltmannZeta", degrees, pdfAltmannZeta(degrees)));
-      results[i].push_back(run_optimizer("TruncZeta", degrees, pdfTruncatedZeta(degrees)));
+      if (USE_ALTERNATIVE) {
+        results[i].push_back(run_optimizer("AltmannZeta", degrees, pdfAltmannZeta(degrees)));
+        results[i].push_back(run_optimizer("TruncZeta", degrees, pdfTruncatedZeta(degrees)));
+      }
 
       std::cerr << file.filename() << " done (" << --remaining << "/" << files.size() << " remaining)\n";
     }
@@ -346,10 +354,11 @@ struct ModelFitter {
           theoretical_cdf.push_back(cdf_geometric(k, theta));
         else if (modelName == "Poisson")
           theoretical_cdf.push_back(cdf_poisson(k, theta));
-        else if (modelName == "AltmannZeta")
+        else if (modelName == "AltmannZeta" && USE_ALTERNATIVE)
           theoretical_cdf.push_back(cdf_altmann_zeta(k, theta[0], theta[1]));
-        else if (modelName == "TruncZeta")
+        else if (modelName == "TruncZeta" && USE_ALTERNATIVE)
           theoretical_cdf.push_back(cdf_truncated_zeta(k, theta[0], static_cast<int>(theta[1])));
+
         else
           theoretical_cdf.push_back(0.0f);
       }
@@ -361,11 +370,44 @@ struct ModelFitter {
         continue;
       }
 
-      out << "# X (k)  EmpiricalCDF  TheoreticalCDF\n";
+      out << "K EmpiricalCDF TheoreticalCDF\n";
       for (size_t n = 0; n < unique_k.size() && n < theoretical_cdf.size(); ++n)
         out << unique_k[n] << " " << empirical_cdf[n] << " " << theoretical_cdf[n] << "\n";
 
       std::cout << " → " << outFile.filename().string() << " written.\n";
+    }
+  }
+
+  void
+  generatePlots() {
+    fs::path outputDir  = "fitted_models";
+    fs::path plotScript = "plot_cdf.R";
+    if (!fs::exists(plotScript)) {
+      std::cerr << "R script not found: " << plotScript << "\n";
+      return;
+    }
+
+    for (const auto& file : fs::directory_iterator(outputDir)) {
+      if (file.path().extension() != ".txt") continue;
+
+      std::string inputFile  = file.path().string();
+      std::string outputFile = file.path().string() + ".png";
+
+      std::string stem      = file.path().stem().string();
+      std::string firstWord = stem.substr(0, stem.find('_'));
+
+      // Build a descriptive title
+      std::string title = "CDF Comparison for " + firstWord;
+
+      // Construct system call
+      std::string cmd = "Rscript \"" + plotScript.string() + "\" \"" +
+        inputFile + "\" \"" + outputFile + "\" \"" + title + "\"";
+
+      std::cout << " → Generating plot: " << outputFile << "\n";
+      int ret = std::system(cmd.c_str());
+      if (ret != 0) {
+        std::cerr << "Failed to generate plot for " << inputFile << "\n";
+      }
     }
   }
 };
@@ -374,14 +416,37 @@ struct ModelFitter {
 int run_combined(const std::string& dir) {
   try {
     ModelFitter fitter(dir);
+    std::cout << "=== Running optimizers on all datasets ===\n";
     fitter.runOptimizers();
+
+    std::cout << "=== Computing AIC values ===\n";
     fitter.computeAIC();
+
+    std::cout << "=== Printing negative log-likelihoods ===\n";
     fitter.printNegLogL();
+
+    std::cout << "=== Printing fitted parameters ===\n";
     fitter.printParameters();
+
+    std::cout << "=== Printing AIC table ===\n";
     fitter.printAICTable();
+
+    std::cout << "=== Printing Akaike weights ===\n";
     fitter.printAkaikeWeights();
+
+    std::cout << "=== Printing best model summary ===\n";
     fitter.printBestModelSummary();
+
+    std::flush(std::cout);
+
+    std::cout << "=== Writing fitted CDFs to output files ===\n";
     fitter.writeFittedCDFs();
+
+    std::flush(std::cout);
+
+    std::cout << "=== Generating CDFs plots===\n";
+    fitter.generatePlots();
+
   } catch (const std::exception& e) {
     std::cerr << "Error: " << e.what() << "\n";
     return 1;
@@ -392,7 +457,7 @@ int run_combined(const std::string& dir) {
 
 int main(int argc, char** argv) {
   if (argc < 2) {
-    std::cerr << "Usage: " << argv[0] << " [-fast] [-compare] <-d> [file/directory] | [file]\n";
+    std::cerr << "Usage: " << argv[0] << " [-fast] [-compare] [-alternative] <-d> [file/directory] | [file]\n";
     return 1;
   }
 
@@ -400,8 +465,9 @@ int main(int argc, char** argv) {
   std::string pathArg;
 
   // Global flags
-  FAST    = false;
-  COMPARE = false;
+  FAST            = false;
+  COMPARE         = false;
+  USE_ALTERNATIVE = false;
 
   // Parse arguments
   for (int i = 1; i < argc; ++i) {
@@ -418,6 +484,8 @@ int main(int argc, char** argv) {
       FAST = true;
     } else if (arg == "-compare") {
       COMPARE = true;
+    } else if (arg == "-alternative") {
+      USE_ALTERNATIVE = true;
     } else if (pathArg.empty()) {
       pathArg = arg;
     } else {
